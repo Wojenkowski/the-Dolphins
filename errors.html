@@ -13,6 +13,7 @@
 <body>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
     <a class="navbar-brand" href="#">The Dolphins</a>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -22,23 +23,22 @@
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
         </ul>
-
     </div>
 </nav>
 <div class="container">
-    <h1>All datacenters</h1>
-
+    <div class="row">
+        <h1 class="col">Errors</h1>
+        <a class="col text-center mb-auto mt-auto" href="index.html"><button  type="button" class="btn btn-success">back</button></a>
+    </div>
     <div class=" mt-5 table-responsive">
         <table class="table table-striped ">
             <thead>
             <tr>
-                <th>#</th>
-                <th>name</th>
-                <th>location lang</th>
-                <th>location flat</th>
-                <th>provider</th>
-                <th>inIsolation</th>
-                <th>go to errors</th>
+                <th>datacenterId</th>
+                <th>error id</th>
+                <th>errorTypeId</th>
+                <th>errorTypelabel</th>
+                <th>created at</th>
             </tr>
             </thead>
             <tbody>
@@ -52,7 +52,7 @@
 
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2020 Copyright:
-         Maxime, Kamil
+        Maxime, Kamil
     </div>
 </footer>
 <!-- Optional JavaScript -->
@@ -60,6 +60,6 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="assets/js/main.js"></script>
+<script src="assets/js/Error.js"></script>
 </body>
 </html>
