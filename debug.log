@@ -1,0 +1,3 @@
+[1124/125833.322:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1124/125833.327:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Maxime Vermeersch\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\6e28dee0-0bb7-46bb-a882-8291acfd4e11: The system cannot find the path specified. (0x3)
+[1124/125833.328:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Maxime Vermeersch\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\aa053d2e-43a8-4eb2-b413-d4e0cb023d09: The system cannot find the path specified. (0x3)
