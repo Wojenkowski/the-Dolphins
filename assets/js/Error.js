@@ -9,10 +9,13 @@ function init(){
 function showDatacentersWithError(){
     let url = new URL (window.location.href);
     let id = url.searchParams.get("id");
-    console.log(id);
-    let myHeaders = new Headers();
-    myHeaders.append("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9odGYyMDIwLnppbmRlcmxhYnMuY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjA2MjEwNzI2LCJleHAiOjE2MDYzOTA3MjYsIm5iZiI6MTYwNjIxMDcyNiwianRpIjoiNXBERjJIYjY5SWJ5Y3JCdiIsInN1YiI6OSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9._ddCBmnzRZ-DZDm5Lgt03xryVhqU7S935FNqg_Y-6X0");
 
+    let myHeaders = new Headers();
+    let bear = sessionStorage.getItem("token");
+    if(bear== null){
+        window.location.replace("index.html");
+    }
+    myHeaders.append("Authorization", "Bearer " + bear);
     let requestOptions = {
         method: 'GET',
         headers: myHeaders,

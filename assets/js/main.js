@@ -10,6 +10,9 @@ function init(){
 function showDatacenters(){
     let myHeaders = new Headers();
     let bear = sessionStorage.getItem("token");
+    if(bear== null){
+        window.location.replace("login.html");
+    }
     myHeaders.append("Authorization", "Bearer " + bear);
 
 
@@ -68,6 +71,7 @@ function isolate(e){
         }).catch(function (err) {
         console.log(err)
     });
+
 
 }
 
