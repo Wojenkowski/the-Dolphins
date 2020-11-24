@@ -64,7 +64,6 @@ function isolate(e){
             return res.json();
         })
         .then(function (result) {
-            console.log(result);
         }).catch(function (err) {
         console.log(err)
     });
