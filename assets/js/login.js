@@ -32,14 +32,18 @@ function login(e){
         fetch("https://htf2020.zinderlabs.com/api/auth/login", requestOptions)
         .then(response => {
             status = response.status;
+            if(status > 400 || status < 600) {
+                throw new Error("Something went wrong");
+            }
             return response.json();
         } )
         .then(result => {
-            console.log(result)
             if(status == 200) {
                 sessionStorage.setItem("token", result.access_token);
                 window.location.replace("index.html");
             }
         })
-        .catch(error => console.log('error', error));
+        .catch(error => {
+            document.querySelector('p').innerHTML = error;
+        });
 }
